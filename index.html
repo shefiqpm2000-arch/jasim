@@ -6,108 +6,280 @@
     <title>Muhammed Jasim - Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="hero">
-        <div class="hero-content">
-            <div class="profile-image-container">
-                <img src="jasim_image.jpg" alt="Muhammed Jasim" class="profile-image">
-            </div>
-            <h1 class="hero-name">Muhammed Jasim</h1>
-            <p class="hero-tagline">Aspiring National-Level Footballer & Creative Content Editor</p>
-            <a href="#about" class="cta-button">My Journey</a>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">MJ</div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#football">Football</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#journey">Journey</a></li>
+            </ul>
         </div>
-    </header>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="grid-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <div class="profile-wrapper">
+                <div class="profile-glow"></div>
+                <img src="jasim_image.jpg" alt="Muhammed Jasim" class="profile-image">
+                <div class="profile-ring"></div>
+            </div>
+            <div class="hero-text">
+                <span class="hero-greeting">Hello, I'm</span>
+                <h1 class="hero-name">Muhammed Jasim</h1>
+                <p class="hero-title">Aspiring National-Level Footballer</p>
+                <p class="hero-subtitle">Creative Video Editor • Content Creator • Student Athlete</p>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">16</span>
+                        <span class="stat-label">Years Old</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-number">Daily</span>
+                        <span class="stat-label">Training</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-number">1</span>
+                        <span class="stat-label">Big Goal</span>
+                    </div>
+                </div>
+                <a href="#about" class="cta-button">
+                    <span>Explore My Journey</span>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
 
     <section id="about" class="about">
         <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <p class="about-text">At 16, I'm building my path toward becoming a national-level football player while developing my creative edge through video editing and content creation. Football has taught me discipline, focus, and the value of consistent effort. When I'm not on the field, I channel that same dedication into creating engaging content for social media. I'm currently pursuing my Plus One in Lab Technician at VHSC, balancing academics with my passion for the game and creativity.</p>
+            <div class="section-header">
+                <span class="section-label">Introduction</span>
+                <h2 class="section-title">About Me</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-image-side">
+                    <div class="about-card">
+                        <div class="card-icon">🎯</div>
+                        <h3>My Mission</h3>
+                        <p>Represent India at the national level in football</p>
+                    </div>
+                    <div class="about-card">
+                        <div class="card-icon">⚡</div>
+                        <h3>My Drive</h3>
+                        <p>Daily practice, unwavering focus, and creative expression</p>
+                    </div>
+                </div>
+                <div class="about-text-side">
+                    <p class="about-intro">I'm a 16-year-old student athlete with a clear vision: to become a national-level footballer. Born on March 4, 2009, I'm currently pursuing my Plus One at VHSC as a Lab Technician student, but my heart belongs to the field.</p>
+                    
+                    <p class="about-paragraph">Football isn't just a game to me—it's a discipline that shapes every aspect of my life. The same dedication I bring to daily training translates into my creative pursuits. When I'm not perfecting my footwork or studying match tactics, I'm editing videos and creating content for social media, combining my love for storytelling with technical skills.</p>
+                    
+                    <p class="about-paragraph">Every sprint, every drill, every match is a building block toward my ultimate goal. I believe in the power of consistent effort, and I'm committed to putting in the work required to compete at the highest level. This journey demands sacrifice, but the dream of wearing the national colors keeps me moving forward.</p>
+                    
+                    <div class="about-qualities">
+                        <div class="quality-badge">Disciplined</div>
+                        <div class="quality-badge">Focused</div>
+                        <div class="quality-badge">Creative</div>
+                        <div class="quality-badge">Determined</div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section id="football" class="football-ambition">
+    <section id="football" class="football-section">
         <div class="container">
-            <h2 class="section-title">Football Ambition</h2>
-            <div class="ambition-content">
+            <div class="section-header">
+                <span class="section-label">Ambition</span>
+                <h2 class="section-title">The National Dream</h2>
+            </div>
+            <div class="football-content">
                 <div class="football-visual">
-                    <div class="ball"></div>
-                    <div class="goal-post"></div>
+                    <div class="stadium-lights">
+                        <div class="light"></div>
+                        <div class="light"></div>
+                        <div class="light"></div>
+                        <div class="light"></div>
+                    </div>
+                    <div class="football-pitch">
+                        <div class="pitch-line horizontal"></div>
+                        <div class="pitch-line vertical"></div>
+                        <div class="center-circle"></div>
+                        <div class="ball-animated"></div>
+                    </div>
                 </div>
-                <div class="ambition-text">
-                    <h3>The National Goal</h3>
-                    <p>Every day on the field is a step closer to representing my country. My goal is clear: reach the national level and compete at the highest stage. This requires discipline, relentless practice, and unwavering focus.</p>
-                    <p>I train daily, refine my technique, and study the game. Football isn't just a hobby—it's my future.</p>
+                <div class="football-text">
+                    <h3>Every Day Counts</h3>
+                    <p>The path to representing India at the national level isn't easy, but I'm built for it. My training regimen is disciplined and structured—every session on the field is purposeful, focused on improving technique, fitness, and game intelligence.</p>
+                    
+                    <div class="training-pillars">
+                        <div class="pillar">
+                            <div class="pillar-icon">💪</div>
+                            <h4>Physical Conditioning</h4>
+                            <p>Building strength, speed, and endurance through dedicated training</p>
+                        </div>
+                        <div class="pillar">
+                            <div class="pillar-icon">🧠</div>
+                            <h4>Tactical Knowledge</h4>
+                            <p>Studying the game, understanding positioning and strategy</p>
+                        </div>
+                        <div class="pillar">
+                            <div class="pillar-icon">⚽</div>
+                            <h4>Technical Skills</h4>
+                            <p>Refining ball control, passing, shooting, and footwork daily</p>
+                        </div>
+                    </div>
+                    
+                    <blockquote class="football-quote">
+                        "Success is no accident. It is hard work, perseverance, learning, studying, sacrifice, and most of all, love of what you are doing."
+                    </blockquote>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="skills" class="skills">
+    <section id="skills" class="skills-section">
         <div class="container">
-            <h2 class="section-title">Skills</h2>
+            <div class="section-header">
+                <span class="section-label">Expertise</span>
+                <h2 class="section-title">Skills & Abilities</h2>
+            </div>
             <div class="skills-grid">
-                <div class="skill-card">
-                    <div class="skill-icon">⚽</div>
-                    <h3>Football</h3>
-                    <div class="skill-bar">
-                        <div class="skill-progress" data-progress="85"></div>
+                <div class="skill-card primary">
+                    <div class="skill-header">
+                        <div class="skill-icon-large">⚽</div>
+                        <div>
+                            <h3>Football</h3>
+                            <p class="skill-subtitle">Primary Focus</p>
+                        </div>
+                    </div>
+                    <div class="skill-description">
+                        <p>Daily training and practice with a focus on becoming a complete player. Working on ball control, tactical awareness, physical fitness, and mental toughness.</p>
+                    </div>
+                    <div class="skill-level">
+                        <div class="level-bar">
+                            <div class="level-fill" data-level="90"></div>
+                        </div>
+                        <span class="level-text">Advanced</span>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="tag">Ball Control</span>
+                        <span class="tag">Speed</span>
+                        <span class="tag">Game Sense</span>
                     </div>
                 </div>
+
                 <div class="skill-card">
-                    <div class="skill-icon">🎬</div>
-                    <h3>Video Editing</h3>
-                    <div class="skill-bar">
-                        <div class="skill-progress" data-progress="75"></div>
+                    <div class="skill-header">
+                        <div class="skill-icon-large">🎬</div>
+                        <div>
+                            <h3>Video Editing</h3>
+                            <p class="skill-subtitle">Creative Outlet</p>
+                        </div>
+                    </div>
+                    <div class="skill-description">
+                        <p>Proficient in creating engaging video content with smooth transitions, color grading, and storytelling techniques that capture attention.</p>
+                    </div>
+                    <div class="skill-level">
+                        <div class="level-bar">
+                            <div class="level-fill" data-level="80"></div>
+                        </div>
+                        <span class="level-text">Proficient</span>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="tag">Editing</span>
+                        <span class="tag">Effects</span>
+                        <span class="tag">Storytelling</span>
                     </div>
                 </div>
+
                 <div class="skill-card">
-                    <div class="skill-icon">📱</div>
-                    <h3>Social Media Content</h3>
-                    <div class="skill-bar">
-                        <div class="skill-progress" data-progress="80"></div>
+                    <div class="skill-header">
+                        <div class="skill-icon-large">📱</div>
+                        <div>
+                            <h3>Content Creation</h3>
+                            <p class="skill-subtitle">Digital Presence</p>
+                        </div>
+                    </div>
+                    <div class="skill-description">
+                        <p>Creating compelling social media content that engages audiences through authentic storytelling and creative visual presentation.</p>
+                    </div>
+                    <div class="skill-level">
+                        <div class="level-bar">
+                            <div class="level-fill" data-level="85"></div>
+                        </div>
+                        <span class="level-text">Proficient</span>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="tag">Social Media</span>
+                        <span class="tag">Engagement</span>
+                        <span class="tag">Creativity</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="timeline" class="timeline">
+    <section id="journey" class="timeline-section">
         <div class="container">
-            <h2 class="section-title">My Journey</h2>
-            <div class="timeline-container">
+            <div class="section-header">
+                <span class="section-label">Roadmap</span>
+                <h2 class="section-title">My Journey</h2>
+            </div>
+            <div class="timeline">
+                <div class="timeline-line"></div>
                 <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <h3>Present</h3>
-                        <p>Plus One Student at VHSC (Lab Technician)</p>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
                         <span class="timeline-date">2024 - 2025</span>
+                        <h3>Foundation Building</h3>
+                        <p>Currently in Plus One at VHSC (Lab Technician program), balancing academics with intensive football training and skill development.</p>
+                        <div class="timeline-status current">Current</div>
                     </div>
                 </div>
                 <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <h3>Training Phase</h3>
-                        <p>Daily football practice and skill development</p>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
                         <span class="timeline-date">Ongoing</span>
+                        <h3>Daily Training Regimen</h3>
+                        <p>Committed to daily practice sessions focused on technical skills, physical conditioning, and tactical understanding of the game.</p>
+                        <div class="timeline-status active">In Progress</div>
                     </div>
                 </div>
                 <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <h3>Near Future</h3>
-                        <p>Compete at district and state levels</p>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
                         <span class="timeline-date">2025 - 2026</span>
+                        <h3>Competitive Level</h3>
+                        <p>Targeting participation in district and state-level tournaments to gain competitive experience and showcase abilities.</p>
+                        <div class="timeline-status upcoming">Upcoming</div>
                     </div>
                 </div>
                 <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <h3>Ultimate Goal</h3>
-                        <p>Represent at the national level</p>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
                         <span class="timeline-date">2027+</span>
+                        <h3>National Representation</h3>
+                        <p>Ultimate goal: Represent India at the national level, competing on the biggest stages and making the country proud.</p>
+                        <div class="timeline-status goal">Goal</div>
                     </div>
                 </div>
             </div>
@@ -116,9 +288,19 @@
 
     <footer class="footer">
         <div class="container">
-            <p class="footer-name">Muhammed Jasim</p>
-            <p class="footer-tagline">Built with passion & discipline</p>
-            <p class="footer-year">&copy; <span id="current-year"></span></p>
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">MJ</div>
+                    <p class="footer-tagline">Built with passion, dedication, and discipline</p>
+                </div>
+                <div class="footer-quote">
+                    <p>"The journey of a thousand miles begins with a single step, but continues with unwavering determination."</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year"></span> Muhammed Jasim. All rights reserved.</p>
+                <p class="footer-meta">Aspiring National Footballer • Student Athlete • Content Creator</p>
+            </div>
         </div>
     </footer>
 
